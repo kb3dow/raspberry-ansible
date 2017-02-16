@@ -1,0 +1,4 @@
+---
+- name: COPY | Setting WPA config for {{ dbs_wifi_ssid }}
+  template: src=etc/wpa_supplicant.conf dest=/etc/wpa_supplicant/wpa_supplicant.conf owner=root group=root mode=0600
+

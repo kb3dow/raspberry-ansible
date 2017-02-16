@@ -18,7 +18,7 @@
     dbs_default_locale: "en_US.UTF-8"
     dbs_locales:
       - "en_US.UTF-8"
-    dbs_timezone: "Europe/Helsinki"
+    dbs_timezone: "America/New_York"
 
     dbs_ntp_hosts:
       - "0.fi.pool.ntp.org"
@@ -31,6 +31,11 @@
     dbs_apt_components: "main contrib non-free rpi"
     open_ports:
       - "ssh"
+    dbs_wifi_ssid: "Enter_Your_Wifi_Ssid_here"
+    dbs_wifi_passwd: "Enter_Your_Wifi_password_here"
+    dbs_wifi_proto: "RSN"
+    dbs_wifi_key_mgmt: "WPA-PSK"
+    dbs_wifi_pairwise: "CCMP"
 
   vars_prompt:
     - name: "password"
