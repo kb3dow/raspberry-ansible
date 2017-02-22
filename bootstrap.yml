@@ -36,6 +36,10 @@
     dbs_wifi_proto: "RSN"
     dbs_wifi_key_mgmt: "WPA-PSK"
     dbs_wifi_pairwise: "CCMP"
+    dbs_packages:
+      - sudo
+      - vim-tiny
+
 
   vars_prompt:
     - name: "password"
