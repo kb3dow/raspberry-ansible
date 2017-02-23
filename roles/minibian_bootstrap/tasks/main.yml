@@ -34,5 +34,9 @@
   include: ntp.yml
   when: dbs_set_ntp
 
+- name: INCLUDE | Restrict SSH with key only
+  include: ssh.yml
+  when: dbs_set_ssh_with_key_only
+
 - name: INCLUDE | Misc system configuration
   include: system.yml

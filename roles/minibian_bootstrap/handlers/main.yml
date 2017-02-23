@@ -11,6 +11,9 @@
 - name: restart rsyslog
   service: name=rsyslog state=restarted
 
+- name: restart ssh
+  service: name=ssh state=restarted
+
 - name: update tzdata
   command: dpkg-reconfigure -f noninteractive tzdata
 
