@@ -15,7 +15,8 @@
     groups={{ dbs_user_groups | default('') }}
     home=/home/pi
     createhome=yes
-    password={{ password | password_hash('sha512') }}
+    # password={{ password | password_hash('sha512') }}
+    password={{ password }}
   register: u
 
 - name: AUTHORIZED_KEY | Install SSH public key to pi user
